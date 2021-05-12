@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row col-md-4 mt-md-4">
+    <!--<input class="form-control" type="text" [(ngModel)]="username" >-->
+
+    <!--<button [disabled]="!username.length" class="btn btn-primary mt-md-2" (click)="onclick()">display details</button>
+    <p *ngIf="username.length">salam {{username}}</p>
+    <p *ngIf="username.length/*; else sayGoodbye*/">salam {{username}}</p>
+    <ng-template #sayGoodbye><p>goodbye</p></ng-template>-->
+
+    <button class="btn btn-primary" (click)="hhh()">display details</button>
+    <p *ngIf="toggleDisplay">this is a paragraph</p>
+    <p *ngFor="let c of clickArray" [ngClass]="{backGreen:c>5}">{{c}}</p>
+  </div>
+</div>

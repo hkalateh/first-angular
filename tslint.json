@@ -4,6 +4,8 @@
     "codelyzer"
   ],
   "rules": {
+    "no-angle-bracket-type-assertion": false,
+    "no-trailing-whitespace": false,
     "align": {
       "options": [
         "parameters",
@@ -52,10 +54,7 @@
       "trace"
     ],
     "no-empty": false,
-    "no-inferrable-types": [
-      true,
-      "ignore-params"
-    ],
+    "no-inferrable-types": false,
     "no-non-null-assertion": true,
     "no-redundant-jsdoc": true,
     "no-switch-case-fall-through": true,
@@ -82,10 +81,7 @@
         "named": "never"
       }
     },
-    "typedef": [
-      true,
-      "call-signature"
-    ],
+    "typedef": false,
     "typedef-whitespace": {
       "options": [
         {
