@@ -1,1 +1,25 @@
-<app-recipe-item></app-recipe-item>
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-primary col-md-12">افزودن دستورالعمل</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <a href="#" class="list-group-item clearfix" *ngFor="let recipe of recipes">
+      <div class="put-right">
+        <h4 class="list-group-item-heading">
+          {{recipe.name}}
+        </h4>
+        <p class="list-group-item-text">
+          {{recipe.description}}
+          <span style="float:left;"><img [src]="recipe.imageUrl" alt="" class="img-responsive" style="max-height: 50px"></span>
+        </p>
+      </div>
+    </a>
+  </div>
+  <app-recipe-item></app-recipe-item>
+
+  <script>
+    document.getElementsByTagName("img").style.borderRadius="50%";
+  </script>
+</div>

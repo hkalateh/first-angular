@@ -8,7 +8,10 @@ import {Recipe} from '../recipe.model';
 })
 export class RecipeListComponent implements OnInit {
 
-  recipes: Recipe[] = [];
+  recipes: Recipe[] = [
+    new Recipe('قرمه سبزی', 'غذای ایرانی', 'https://gate-of-nations.org/storage/2019/11/AP.-Food-and-Drinks-in-Iran-Ghorme-Sabzi.jpg'),
+    new Recipe( 'کباب', 'غذای ترکی', 'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg')
+  ];
 
   constructor() { }
 
